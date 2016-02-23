@@ -1,15 +1,34 @@
+#################
+## Misc
+#################
+**/.DS_Store
+nbproject
+manifest.mf
+build.xml
+node_modules/*
+npm-debug.log
+coverage
+*.ts
+!*.d.ts
+typings
+typings.json
+
 # Node generated files
 node_modules
 npm-debug.log
 
+############
+## Windows
+############
+
 # OS generated files
 Thumbs.db
-.DS_Store
 
-# Ignored files
-*.ts
-!*.d.ts
+# Folder config file
+Desktop.ini
 
-# Sublime project files
+#################
+## Sublime Text
+#################
 ng2-little-kitty.sublime-project
 ng2-little-kitty.sublime-workspace

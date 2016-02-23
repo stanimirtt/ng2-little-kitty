@@ -5,24 +5,48 @@
   "main": "ng2-little-kitty.js",
   "typings": "./ng2-little-kitty.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "npm run prepublish && git-cz",
+    "prepublish": "typings install && tsc && node make.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stanimirtt/ng2-little-kitty"
   },
   "keywords": [
+    "angular",
     "angular2",
-    "kitty",
-    "little"
+    "little",
+    "kitty"
   ],
   "author": "Stanimir Todorov <stanimirtt@gmail.com> (http://webbatka.com)",
   "license": "MIT",
-  "dependencies": {
+  "homepage": "https://github.com/stanimirtt/ng2-little-kitty",
+  "peerDependencies": {
     "angular2": "^2.0.0-beta.0",
-    "es6-promise": "^3.1.2",
-    "es6-shim": "^0.33.13",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.3",
     "reflect-metadata": "^0.1.2",
-    "rxjs": "^5.0.0-beta.2",
-    "zone.js": "^0.5.15"
+    "rxjs": "^5.0.0-beta.0",
+    "zone.js": "^0.5.10"
   },
   "devDependencies": {
-    "typescript": "^1.7.5"
+    "angular2": "2.0.0-beta.7",
+    "commitizen": "~2.5.0",
+    "cz-conventional-changelog": "~1.1.4",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.3",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "semantic-release": "~4.3.5",
+    "systemjs": "~0.19.22",
+    "systemjs-builder": "^0.15.9",
+    "tsd": "^0.6.5",
+    "typescript": "^1.8.0",
+    "typings": "^0.6.8",
+    "zone.js": "0.5.15"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }

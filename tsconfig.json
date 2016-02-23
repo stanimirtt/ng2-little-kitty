@@ -11,7 +11,9 @@
         "moduleResolution": "node"
     },
     "files": [
-        "ng2-little-kitty.ts"
+        "typings/main.d.ts",
+        "ng2-little-kitty.ts",
+        "./src/little-kitty.service.ts"
     ],
     "exclude": [
         "node_modules"
