@@ -6,8 +6,7 @@
   "typings": "./ng2-little-kitty.d.ts",
   "scripts": {
     "commit": "npm run prepublish && git-cz",
-    "prepublish": "typings install && tsc && node make.js",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "prepublish": "typings install && tsc && node make.js"
   },
   "repository": {
     "type": "git",
@@ -38,7 +37,6 @@
     "es6-shim": "^0.33.3",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
-    "semantic-release": "~4.3.5",
     "systemjs": "~0.19.22",
     "systemjs-builder": "^0.15.9",
     "tsd": "^0.6.5",
