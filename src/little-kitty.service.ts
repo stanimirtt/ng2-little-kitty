@@ -7,4 +7,8 @@ export class LittleKittyService {
     constructor(http: Http) {
         // ...
     }
+
+    activate () {
+		console.log("Helloooo");
+    }
 }
