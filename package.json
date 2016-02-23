@@ -1,6 +1,6 @@
 {
   "name": "ng2-little-kitty",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "description": "Little kitty",
   "main": "ng2-little-kitty.js",
   "typings": "./ng2-little-kitty.d.ts",
